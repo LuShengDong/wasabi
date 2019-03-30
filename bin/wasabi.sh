@@ -149,7 +149,7 @@ bootstrap() {
     sudo apt-get install -y git-flow
 
     #Install Nodejs
-    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+    curl -sL https://mirrors.tuna.tsinghua.edu.cn/nodesource/deb_6.x | sudo -E bash -
     sudo apt-get install -y nodejs
     sudo npm install -g bower
     sudo npm install -g grunt-cli
@@ -162,7 +162,7 @@ bootstrap() {
     #Install docker
     sudo apt-get install -y apt-transport-https ca-certificates
     sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-    sudo echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" > /tmp/docker.list
+    sudo echo "deb https://mirror.tuna.tsinghua.edu.cn/ubuntu ubuntu-xenial main" > /tmp/docker.list
     sudo cp /tmp/docker.list /etc/apt/sources.list.d/docker.list
     sudo rm -rf /tmp/docker.list
     sudo apt-get purge lxc-docker
